@@ -6,7 +6,7 @@ let {generateDataToSend} = require('../../../libs/response/response')
 module.exports = getUsuarios = async (req, res) => {
     try {
         let response = await mysqlClient.consultar(`SELECT
-     
+        usuarios.id,
         usuarios.nombre,
         usuarios.apellido,
         usuarios.telefono, 
